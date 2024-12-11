@@ -19,6 +19,7 @@ body {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -35,8 +36,13 @@ body {
   background-color: #03a9f4;
 }
 
+.language-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .language-selector button {
-  margin-left: 10px;
   padding: 5px 10px;
   background-color: #03a9f4;
   border: none;
@@ -49,21 +55,88 @@ body {
   background-color: #0288d1;
 }
 
-/* Sections */
-.section {
+/* Servicios */
+#services {
   padding: 80px 20px;
+  background-color: #121212;
   text-align: center;
 }
 
-h1, h2 {
+#services h2 {
   color: #03a9f4;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 20px;
+  text-align: left;
+  color: #fff;
+}
+
+.service:nth-child(odd) {
+  flex-direction: row; /* Imagen a la izquierda, texto a la derecha */
+}
+
+.service:nth-child(even) {
+  flex-direction: row-reverse; /* Imagen a la derecha, texto a la izquierda */
+}
+
+.service h3 {
+  color: #03a9f4;
+  margin-bottom: 15px;
+}
+
+.service p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .services-grid {
+    flex-direction: column; /* En pantallas pequeñas, todo en una columna */
+  }
+
+  .service {
+    flex-direction: column; /* Imagen encima del texto en pantallas pequeñas */
+  }
+
+  .service img {
+    width: 100%; /* Imagen toma el 100% en pantallas pequeñas */
+    height: auto;
+  }
+
+  .service-content {
+    text-align: center; /* Texto centrado en pantallas pequeñas */
+  }
 }
 
 /* Carousel */
 .carousel {
   position: relative;
   overflow: hidden;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -121,4 +194,48 @@ h1, h2 {
   padding: 20px;
   background-color: #1e1e1e;
   border-top: 1px solid #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin-bottom: 10px;
+  }
+
+  .language-selector {
+    margin-top: 10px;
+  }
+
+  .carousel img {
+    height: auto;
+  }
+
+  .contact-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel img {
+    width: 100%;
+  }
+
+  .carousel-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .language-selector button {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
 }
