@@ -15,9 +15,11 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
       <div class="language-selector">
-        <button onclick="changeLanguage('en')">English</button>
-        <button onclick="changeLanguage('fr')">Français</button>
-        <button onclick="changeLanguage('es')">Español</button>
+         <select id="language-switcher" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+              <option value="es">Español</option>
+         </select>
       </div>
     </nav>
   </header>
@@ -27,6 +29,7 @@
     <h1>Leading the Future of Telecommunications</h1>
     <p>We are experts in delivering cutting-edge technology solutions for businesses and homes. Our services include security cameras, Starlink installations, wireless networks, and more.</p>
   </section>
+  
 <!-- Section: Services -->
 <section id="services" class="section">
   <h2>Services</h2>
