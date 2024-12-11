@@ -11,10 +11,14 @@ function moveCarousel(direction) {
 }
 
 // Language Selector
-function changeLanguage(language) {
-  alert(`Language changed to: ${language}`);
-  // Add functionality to update text based on the selected language.
+function changeLanguage() {
+  const language = document.getElementById('language-switcher').value;
+  localStorage.setItem('language', language);
+  changeLanguage(language)// Aquí puedes agregar la lógica para cargar el texto en el idioma correspondiente
+  location.reload(); // Recarga la página para aplicar el nuevo idioma
 }
+
+
 
 // Load JSON file and update the content dynamically
 async function changeLanguage(language) {
