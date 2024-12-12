@@ -62,7 +62,7 @@ import translations from './languages.json';
 function changeLanguage() {
   console.log(translations)
   const language = document.getElementById("language-switcher").value;
-
+  console.log(language)
   // Verifica si las traducciones para el idioma seleccionado existen
   if (!translations[language]) {
     console.error(`Translations for '${language}' not found.`);
