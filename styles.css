@@ -129,8 +129,8 @@ h1, h2, h3 {
 }
 
 .service p {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 0.8rem;
+  line-height: 1;
 }
 
 /* Estilos generales para el carrusel */
