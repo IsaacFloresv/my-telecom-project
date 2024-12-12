@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Languages
-let translations = {};
+/* let translations = {};
 
 // Cargar el archivo JSON de idiomas
 fetch("languages.json")
@@ -51,9 +51,9 @@ fetch("languages.json")
   })
   .catch((error) => {
     console.error("Error loading language file:", error);
-  });
+  }); */
 
-// import translations from './languages.json';
+import translations from './languages.json';
 
 
 
