@@ -61,14 +61,14 @@ body {
 }
 
 .language-selector::after {
-  content: '▼';  /* Indicador de que es un desplegable */
+  content: '▼'; /* Indicador de que es un desplegable */
   font-size: 0.8rem;
   margin-left: 10px;
 }
 
 /* Acerca de (About Section) */
 #about {
-  padding: 80px 20px;  /* Agregar padding-top suficiente para compensar el navbar */
+  padding: 80px 20px; /* Agregar padding-top suficiente para compensar el navbar */
   background-color: #121212;
   text-align: center;
   margin-top: 70px; /* Compensar el navbar con un margen */
@@ -113,9 +113,11 @@ body {
 }
 
 .service img {
-  width: 50%;
-  height: auto;
-  object-fit: cover;
+  width: 100%; /* Asegura que la imagen ocupa todo su contenedor */
+  height: 250px; /* Altura uniforme para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para que no se deforme */
+  max-width: 400px; /* Tamaño máximo para limitar en pantallas grandes */
+  margin: auto; /* Centra la imagen si es necesario */
 }
 
 .service-content {
@@ -142,6 +144,18 @@ body {
   line-height: 1.5;
 }
 
+/* Carrusel (Carousel Section) */
+.carousel {
+  margin: 40px 0;
+}
+
+.carousel img {
+  width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+  height: 400px; /* Altura uniforme para todas las imágenes */
+  object-fit: cover; /* Ajusta el contenido sin deformarlo */
+  border-radius: 10px; /* Opcional: agrega bordes redondeados */
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
   .services-grid {
@@ -153,8 +167,7 @@ body {
   }
 
   .service img {
-    width: 100%; /* Imagen toma el 100% en pantallas pequeñas */
-    height: auto;
+    height: 200px; /* Reduce la altura en pantallas pequeñas */
   }
 
   .service-content {
@@ -163,5 +176,9 @@ body {
 
   #about {
     margin-top: 100px; /* Asegura que la sección "Acerca de" no quede debajo del navbar en pantallas pequeñas */
+  }
+
+  .carousel img {
+    height: 300px; /* Ajusta el tamaño del carrusel en pantallas pequeñas */
   }
 }
