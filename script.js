@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let translations = {};
 
 // Cargar el archivo JSON de idiomas
-/* fetch("languages.json")
+fetch("languages.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Error loading translations");
@@ -51,9 +51,9 @@ let translations = {};
   })
   .catch((error) => {
     console.error("Error loading language file:", error);
-  }); */
+  });
 
-import translations from './languages.json';
+// import translations from './languages.json';
 
 
 
