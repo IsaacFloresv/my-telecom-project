@@ -1,14 +1,38 @@
 // Carousel functionality
-let currentSlide = 0;
+// Declarar las variables globales
+let currentIndex = 0;
 
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
+
+const carouselTrack = document.querySelector('.carousel-track');
+
+// Mover el carrusel cuando se haga clic en los botones
 function moveCarousel(direction) {
-  const track = document.querySelector('.carousel-track');
-  const slides = document.querySelectorAll('.carousel-item');
-  const totalSlides = slides.length;
+  currentIndex += direction;
 
-  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-  track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  // Revisar los límites del índice
+  if (currentIndex < 0) {
+    currentIndex = totalItems - 1; // Si está en el primer ítem, vuelve al último
+  } else if (currentIndex >= totalItems) {
+    currentIndex = 0; // Si está en el último ítem, vuelve al primero
+  }
+
+  // Actualizar el desplazamiento del carrusel
+  const offset = -currentIndex * 100; // Ajustar el desplazamiento para cada imagen
+  carouselTrack.style.transform = `translateX(${offset}%)`;
 }
+
+// Asegúrate de que las funciones se ejecuten cuando el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', () => {
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+
+  // Asignar los eventos de clic a los botones
+  prevButton.addEventListener('click', () => moveCarousel(-1));
+  nextButton.addEventListener('click', () => moveCarousel(1));
+});
+
 
 
 // Languages
@@ -32,8 +56,11 @@ let translations = {};
 import translations from './languages.json';
 
 
+
+
 // Función para cambiar el idioma
 function changeLanguage() {
+  console.log(translations)
   const language = document.getElementById("language-switcher").value;
 
   // Verifica si las traducciones para el idioma seleccionado existen
