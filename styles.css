@@ -7,6 +7,15 @@ body {
   line-height: 1.6;
 }
 
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
 /* Header */
 .header {
   position: fixed;
@@ -15,7 +24,7 @@ body {
   background-color: #1e1e1e;
   padding: 10px 20px;
   z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra para destacar el navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .navbar {
@@ -36,7 +45,7 @@ body {
   background-color: #03a9f4;
 }
 
-/* Lenguaje Selector */
+/* Language Selector */
 .language-selector {
   display: flex;
   gap: 10px;
@@ -60,23 +69,10 @@ body {
   background-color: #0288d1;
 }
 
-.language-selector::after {
-  content: '▼'; /* Indicador de que es un desplegable */
-  font-size: 0.8rem;
-  margin-left: 10px;
-}
-
-/* Acerca de (About Section) */
-#about {
-  padding: 80px 20px; /* Agregar padding-top suficiente para compensar el navbar */
-  background-color: #121212;
-  text-align: center;
-  margin-top: 70px; /* Compensar el navbar con un margen */
-}
-
-#about h2 {
+/* About Section */
+#about h1 {
   color: #03a9f4;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 #about p {
@@ -84,14 +80,7 @@ body {
   line-height: 1.6;
 }
 
-/* Servicios (Services Section) */
-#services {
-  padding: 80px 20px;
-  background-color: #121212;
-  text-align: center;
-  margin-top: 70px; /* Compensar el navbar */
-}
-
+/* Services Section */
 #services h2 {
   color: #03a9f4;
   margin-bottom: 40px;
@@ -99,8 +88,9 @@ body {
 
 .services-grid {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 40px;
+  justify-content: center;
 }
 
 .service {
@@ -110,28 +100,21 @@ body {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
 }
 
 .service img {
-  width: 100%; /* Asegura que la imagen ocupa todo su contenedor */
-  height: 250px; /* Altura uniforme para las imágenes */
-  object-fit: cover; /* Ajusta la imagen para que no se deforme */
-  max-width: 400px; /* Tamaño máximo para limitar en pantallas grandes */
-  margin: auto; /* Centra la imagen si es necesario */
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover;
+  max-width: 400px;
+  margin: auto;
 }
 
 .service-content {
   padding: 20px;
   text-align: left;
   color: #fff;
-}
-
-.service:nth-child(odd) {
-  flex-direction: row; /* Imagen a la izquierda, texto a la derecha */
-}
-
-.service:nth-child(even) {
-  flex-direction: row-reverse; /* Imagen a la derecha, texto a la izquierda */
 }
 
 .service h3 {
@@ -144,41 +127,110 @@ body {
   line-height: 1.5;
 }
 
-/* Carrusel (Carousel Section) */
+/* Projects (Carousel Section) */
+#projects h2 {
+  color: #03a9f4;
+  margin-bottom: 40px;
+}
+
 .carousel {
-  margin: 40px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.carousel img {
-  width: 100%; /* Imagen ocupa todo el ancho del contenedor */
-  height: 400px; /* Altura uniforme para todas las imágenes */
-  object-fit: cover; /* Ajusta el contenido sin deformarlo */
-  border-radius: 10px; /* Opcional: agrega bordes redondeados */
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
 }
 
-/* Responsividad */
+.carousel-item {
+  flex: 0 0 300px; /* Ajusta el ancho de cada elemento */
+  max-width: 300px;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+/* Contact Section */
+#contact h2 {
+  color: #03a9f4;
+  margin-bottom: 20px;
+}
+
+.contact-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* Responsiveness */
 @media (max-width: 768px) {
-  .services-grid {
-    flex-direction: column; /* En pantallas pequeñas, todo en una columna */
-  }
-
   .service {
-    flex-direction: column; /* Imagen encima del texto en pantallas pequeñas */
+    flex-direction: column;
   }
 
   .service img {
-    height: 200px; /* Reduce la altura en pantallas pequeñas */
+    height: 200px;
   }
 
-  .service-content {
-    text-align: center; /* Texto centrado en pantallas pequeñas */
+  .carousel-item img {
+    height: 300px;
   }
 
-  #about {
-    margin-top: 100px; /* Asegura que la sección "Acerca de" no quede debajo del navbar en pantallas pequeñas */
-  }
-
-  .carousel img {
-    height: 300px; /* Ajusta el tamaño del carrusel en pantallas pequeñas */
+  .contact-card {
+    width: 90%;
   }
 }
