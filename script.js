@@ -15,7 +15,7 @@ function moveCarousel(direction) {
 let translations = {};
 
 // Cargar el archivo JSON de idiomas
-fetch("languages.json")
+/* fetch("languages.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Error loading translations");
@@ -27,7 +27,10 @@ fetch("languages.json")
   })
   .catch((error) => {
     console.error("Error loading language file:", error);
-  });
+  }); */
+
+import translations from './languages.json';
+
 
 // Función para cambiar el idioma
 function changeLanguage() {
