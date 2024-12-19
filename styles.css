@@ -96,21 +96,21 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 100px 0;
-  background: #1e1e1e;  
+  padding: 100px 30px;
+  background: #bdbec0; 
 }
 
 .hero-logo {
   height: 400px;
-  width: 50%;
+  width: 400px;
   max-width: 100%;
-  background:rgb(236, 231, 231);
-  border-radius: 20px;
+  border-radius: 50% 50%;
+  border: rgba(95, 94, 94, 0.808) solid 1px;
 }
 
 .hero-content {
   text-align: left;
-  color: #fff;
+  color: #373636;
 }
 
 .hero-content h1 {
