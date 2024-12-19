@@ -95,6 +95,9 @@
   },
   "es": {
     "title": "Servicios Tecnológicos Clareview",
+    "navbar":{
+      
+    },
     "about": {
       "heading": "Liderando el Futuro de las Telecomunicaciones",
       "description": "Somos expertos en ofrecer soluciones tecnológicas de vanguardia para negocios y hogares. Nuestros servicios incluyen cámaras de seguridad, instalaciones Starlink, redes inalámbricas y más."

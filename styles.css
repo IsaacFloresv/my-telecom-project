@@ -60,7 +60,6 @@ h3 {
 
 #language-button {
   background: none;
-  fill: white;
   border: none;
   cursor: pointer;
 }
@@ -72,7 +71,7 @@ h3 {
   margin: 0;
   padding: 0;
   list-style: none;
-  background: #fff;
+  background: #232323;
   border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -83,38 +82,46 @@ h3 {
 
 #language-list li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 #language-list li a:hover {
-  background: #f0f0f0;
+  background: #3f3d3d;
 }
-
 
 /* About Section */
 .hero {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 100px 20px;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
+  padding: 100px 0;
+  background: #1e1e1e;  
 }
 
 .hero-logo {
-  max-width: 150px;
-  margin-bottom: 20px;
+  height: 400px;
+  width: 50%;
+  max-width: 100%;
+  background:rgb(236, 231, 231);
+  border-radius: 20px;
+}
+
+.hero-content {
+  text-align: left;
+  color: #fff;
 }
 
 .hero-content h1 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .hero-content p {
   font-size: 1.2rem;
+  padding: 10px;
 }
 
 /* Services Section */
@@ -236,6 +243,23 @@ h3 {
   margin: 0;
   font-size: 0.9rem;
   color: #fff;
+}
+
+/* Estilo para el scroll */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
 }
 
 /* Responsiveness */
