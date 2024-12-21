@@ -9,25 +9,25 @@
     },
     "about": {
       "heading": "Leading the Future of Telecommunications",
-      "description": "We are experts in delivering cutting-edge technology solutions for businesses and homes. Our services include security cameras, Starlink installations, wireless networks, and more."
+      "description": "We are experts in delivering cutting-edge technology solutions for businesses and homes. Our services include security cameras, Starlink installations, wireless networks, and more. With over 15 years of experience, we pride ourselves on using high-quality materials and providing top-notch services."
     },
     "services": {
       "heading": "Services",
       "securityCamera": {
         "title": "Security Camera Installation",
-        "description": "Protect your space with advanced security systems tailored to your needs."
+        "description": "Protect your space with advanced security systems tailored to your needs. Our installations include high-definition cameras, remote access, and reliable monitoring services."
       },
       "starlink": {
         "title": "Starlink Installation",
-        "description": "Experience high-speed internet anywhere with our Starlink installation services."
+        "description": "Experience high-speed internet anywhere with our Starlink installation services. We ensure seamless setup and optimal performance, even in remote areas."
       },
       "wirelessNetworks": {
         "title": "Wireless Network Solutions",
-        "description": "Custom wireless solutions to keep you connected seamlessly."
+        "description": "Custom wireless solutions to keep you connected seamlessly. We design and implement robust wireless networks for both residential and commercial properties."
       },
       "audioVideo": {
         "title": "Audio & Video Solutions",
-        "description": "Transform your space with cutting-edge audio and video systems."
+        "description": "Transform your space with cutting-edge audio and video systems. From home theaters to conference rooms, we provide high-quality installations and support."
       }
     },
     "projects": {
@@ -55,32 +55,32 @@
   "fr": {
     "title": "Services Technologiques Clareview",
     "navbar": {
-      "about": "Propost",
+      "about": "À propos",
       "services": "Services",
-      "projects": "Projects",
+      "projects": "Projets",
       "contact": "Contact"
     },
     "about": {
       "heading": "Diriger l'avenir des télécommunications",
-      "description": "Nous sommes experts dans la fourniture de solutions technologiques de pointe pour les entreprises et les maisons. Nos services incluent les caméras de sécurité, les installations Starlink, les réseaux sans fil et plus encore."
+      "description": "Nous sommes experts dans la fourniture de solutions technologiques de pointe pour les entreprises et les maisons. Nos services incluent les caméras de sécurité, les installations Starlink, les réseaux sans fil et plus encore. Avec plus de 15 ans d'expérience, nous nous engageons à utiliser des matériaux de haute qualité et à fournir des services de qualité supérieure."
     },
     "services": {
       "heading": "Services",
       "securityCamera": {
         "title": "Installation de Caméra de Sécurité",
-        "description": "Protégez votre espace avec des systèmes de sécurité avancés adaptés à vos besoins."
+        "description": "Protégez votre espace avec des systèmes de sécurité avancés adaptés à vos besoins. Nos installations incluent des caméras haute définition, un accès à distance et des services de surveillance fiables."
       },
       "starlink": {
         "title": "Installation Starlink",
-        "description": "Profitez d'Internet haute vitesse partout avec nos services d'installation Starlink."
+        "description": "Profitez d'Internet haute vitesse partout avec nos services d'installation Starlink. Nous assurons une configuration fluide et des performances optimales, même dans les zones éloignées."
       },
       "wirelessNetworks": {
         "title": "Solutions Réseaux Sans Fil",
-        "description": "Solutions sans fil personnalisées pour vous maintenir connecté sans interruption."
+        "description": "Solutions sans fil personnalisées pour vous maintenir connecté sans interruption. Nous concevons et mettons en œuvre des réseaux sans fil robustes pour les propriétés résidentielles et commerciales."
       },
       "audioVideo": {
         "title": "Solutions Audio & Vidéo",
-        "description": "Transformez votre espace avec des systèmes audio et vidéo de pointe."
+        "description": "Transformez votre espace avec des systèmes audio et vidéo de pointe. Des home cinémas aux salles de conférence, nous fournissons des installations et un support de haute qualité."
       }
     },
     "projects": {
@@ -107,33 +107,33 @@
   },
   "es": {
     "title": "Servicios Tecnológicos Clareview",
-   "navbar": {
+    "navbar": {
       "about": "Nosotros",
       "services": "Servicios",
-      "projects": "Projectos",
-      "contact": "Contactenos"
+      "projects": "Proyectos",
+      "contact": "Contáctenos"
     },
     "about": {
       "heading": "Liderando el Futuro de las Telecomunicaciones",
-      "description": "Somos expertos en ofrecer soluciones tecnológicas de vanguardia para negocios y hogares. Nuestros servicios incluyen cámaras de seguridad, instalaciones Starlink, redes inalámbricas y más."
+      "description": "Somos expertos en ofrecer soluciones tecnológicas de vanguardia para negocios y hogares. Nuestros servicios incluyen cámaras de seguridad, instalaciones Starlink, redes inalámbricas y más. Con más de 15 años de experiencia, nos enorgullecemos de utilizar materiales de alta calidad y brindar servicios de excelencia."
     },
     "services": {
       "heading": "Servicios",
       "securityCamera": {
         "title": "Instalación de Cámaras de Seguridad",
-        "description": "Proteja su espacio con sistemas de seguridad avanzados adaptados a sus necesidades."
+        "description": "Proteja su espacio con sistemas de seguridad avanzados adaptados a sus necesidades. Nuestras instalaciones incluyen cámaras de alta definición, acceso remoto y servicios de monitoreo confiables."
       },
       "starlink": {
         "title": "Instalación de Starlink",
-        "description": "Experimente internet de alta velocidad en cualquier lugar con nuestros servicios de instalación de Starlink."
+        "description": "Experimente internet de alta velocidad en cualquier lugar con nuestros servicios de instalación de Starlink. Aseguramos una configuración perfecta y un rendimiento óptimo, incluso en áreas remotas."
       },
       "wirelessNetworks": {
         "title": "Soluciones de Redes Inalámbricas",
-        "description": "Soluciones inalámbricas personalizadas para mantenerlo conectado sin problemas."
+        "description": "Soluciones inalámbricas personalizadas para mantenerlo conectado sin problemas. Diseñamos e implementamos redes inalámbricas robustas para propiedades residenciales y comerciales."
       },
       "audioVideo": {
         "title": "Soluciones de Audio y Video",
-        "description": "Transforme su espacio con sistemas de audio y video de vanguardia."
+        "description": "Transforme su espacio con sistemas de audio y video de vanguardia. Desde teatros en casa hasta salas de conferencias, ofrecemos instalaciones de alta calidad y soporte técnico."
       }
     },
     "projects": {
