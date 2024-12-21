@@ -97,7 +97,7 @@ h3 {
   justify-content: center;
   text-align: center;
   padding: 100px 30px;
-  background: #bdbec0; 
+  background: #bdbec0;
   box-shadow: 0 0px 20px rgba(203, 196, 196, 0.5);
 }
 
@@ -141,31 +141,33 @@ h3 {
 .service {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: #1e1e1e;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 95%;
+  width: 90%;
+  height: auto;
 }
 
 .service img {
-  width: auto;
-  height: 250px;
-  object-fit: cover;
+  width: 33.3%;
+  height: 350px;
+  object-fit: fill;
   max-width: 400px;
-  margin: auto;
 }
 
-.service-content-l {
-  padding: 20px;
+.service-content-l,
+.service-content-r {
+  width: 66.6%;
+  padding: 40px;
   text-align: left;
   color: #fff;
 }
 
 .service-content-r {
-  padding: 20px;
   text-align: right;
-  color: #fff;
 }
 
 .service h3 {
@@ -182,34 +184,49 @@ h3 {
 .carousel {
   position: relative;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: transparent;
+  /* Fondo transparente */
   padding: 20px;
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .carousel-track {
   display: flex;
-  animation: scroll 15s linear infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
+  margin: 0 30px;
+  gap: 40px;
+  width: 100%;
 }
 
 .carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-width: 300px;
-  margin-right: 20px;
+  /* Ancho mínimo para las tarjetas */
+  background-color: transparent;
+  /* Fondo transparente */
 }
 
 .carousel-item img {
-  width: 100%;
+  width: 400px;
+  /* Ancho fijo para las imágenes */
+  height: 400px;
+  /* Alto fijo para las imágenes */
+  object-fit: cover;
+  /* Ajusta la imagen al contenedor, cubriendo el área sin distorsión */
   border-radius: 10px;
+  /* Ajusta la imagen al contenedor */
+}
+
+.carousel-text {
+  margin-top: 10px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
 }
 
 /* Contact Section */
