@@ -1,6 +1,12 @@
 {
   "en": {
     "title": "Clareview Technology Services",
+    "navbar": {
+      "about": "About",
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
     "about": {
       "heading": "Leading the Future of Telecommunications",
       "description": "We are experts in delivering cutting-edge technology solutions for businesses and homes. Our services include security cameras, Starlink installations, wireless networks, and more."
@@ -39,15 +45,21 @@
     "contact": {
       "heading": "Contact",
       "phoneLabel": "Phone:",
-      "phone": "+1 234 567 890",
+      "phone": "+1 (234) 567-890",
       "emailLabel": "Email:",
       "email": "contact@clareviewtechnologyservices.com",
       "addressLabel": "Address:",
-      "address": "123 Telecom Street, Toronto, ON"
+      "address": "Edmonton, Canada."
     }
   },
   "fr": {
     "title": "Services Technologiques Clareview",
+    "navbar": {
+      "about": "Propost",
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
     "about": {
       "heading": "Diriger l'avenir des télécommunications",
       "description": "Nous sommes experts dans la fourniture de solutions technologiques de pointe pour les entreprises et les maisons. Nos services incluent les caméras de sécurité, les installations Starlink, les réseaux sans fil et plus encore."
@@ -86,17 +98,20 @@
     "contact": {
       "heading": "Contact",
       "phoneLabel": "Téléphone:",
-      "phone": "+1 234 567 890",
+      "phone": "+1 (234) 567-890",
       "emailLabel": "Email:",
       "email": "contact@clareviewtechnologyservices.com",
       "addressLabel": "Adresse:",
-      "address": "123 Rue Telecom, Toronto, ON"
+      "address": "Edmonton, Canada."
     }
   },
   "es": {
     "title": "Servicios Tecnológicos Clareview",
-    "navbar":{
-      
+   "navbar": {
+      "about": "Nosotros",
+      "services": "Servicios",
+      "projects": "Projectos",
+      "contact": "Contactenos"
     },
     "about": {
       "heading": "Liderando el Futuro de las Telecomunicaciones",
@@ -136,11 +151,11 @@
     "contact": {
       "heading": "Contacto",
       "phoneLabel": "Teléfono:",
-      "phone": "+1 234 567 890",
+      "phone": "+1 (234) 567-890",
       "emailLabel": "Correo Electrónico:",
       "email": "contact@clareviewtechnologyservices.com",
       "addressLabel": "Dirección:",
-      "address": "123 Calle Telecom, Toronto, ON"
+      "address": "Edmonton, Canada."
     }
   }
 }

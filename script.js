@@ -17,9 +17,17 @@ function changeLanguage(lang) {
     .then(response => response.json())
     .then(data => {
       const languageData = data[lang];
-
+      
       document.querySelector('title').textContent = languageData.title;
-      document.querySelector('#about h1').textContent = languageData.about.heading;
+      
+      console.log(languageData.navbar.projects)
+      document.querySelector('#nvabout').textContent = languageData.navbar.about;
+      document.querySelector('#nvservices').textContent = languageData.navbar.services;
+      document.querySelector('#nvprojects').textContent = languageData.navbar.projects;
+      document.querySelector('#nvcontact').textContent = languageData.navbar.contact;
+      
+
+     document.querySelector('#about h1').textContent = languageData.about.heading;
       document.querySelector('#about p').textContent = languageData.about.description;
       document.querySelector('#services h2').textContent = languageData.services.heading;
       
