@@ -98,6 +98,7 @@ h3 {
   text-align: center;
   padding: 100px 30px;
   background: #bdbec0; 
+  box-shadow: 0 0px 20px rgba(203, 196, 196, 0.5);
 }
 
 .hero-logo {
