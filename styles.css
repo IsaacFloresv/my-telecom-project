@@ -40,7 +40,6 @@ h3 {
 .navbar a {
   color: #fff;
   text-decoration: none;
-  width: 80px;
   padding: 0 15px;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -104,16 +103,19 @@ h3 {
 }
 
 .hero-logo {
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   max-width: 100%;
-  border-radius: 50% 50%;
+  border-radius: 40% 20% 40% 20%;
   border: rgba(95, 94, 94, 0.808) solid 1px;
+  -webkit-mask: radial-gradient(circle 710px at 47% 60%, #1e1e1e 0%, #1e1e1e 10%, #1e1e1e 40%, transparent 70%);
+    mask: radial-gradient(circle 710px at 47% 60%, #1e1e1e 0%, #1e1e1e 10%, #1e1e1e 40%, transparent 70%);
 }
 
 .hero-content {
   text-align: left;
   color: #373636;
+  padding-left: .5vh;
 }
 
 .hero-content h1 {
@@ -123,7 +125,7 @@ h3 {
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 10px;
 }
 
@@ -292,14 +294,14 @@ h2 {
   }
 
   .section {
-    width: 85vh;
+    width: 125vh;
     padding: 0 0;
     text-align: center;
   }
 
   .header {
     position: fixed;
-    width: 90vh;
+    width: 125vh;
     padding: 0 2px;
     top: 0;
     background-color: #1e1e1e;
@@ -312,7 +314,7 @@ h2 {
     justify-content: space-around;
     align-items: center;
     height: 30px;
-    width: 90vh;
+    width: 125vh;
   }
 
   .navbar a {
@@ -337,11 +339,11 @@ h2 {
   }
 
   #language-list {
-    left: -33px;
+    left: -25px;
   }
 
   .hero {
-    width: 70vh;
+    width: 100vh;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -365,7 +367,7 @@ h2 {
   .service {
     flex-direction: row;
     height: 80px;
-    width: 280px;
+    width: 120vh;
   }
 
   .service-content-l,
@@ -394,7 +396,7 @@ h2 {
   }
 
   .carousel-item img {
-    height: 300px;
+    height: 125vh;
   }
 
   .contact-card {
@@ -413,7 +415,7 @@ h2 {
   }
 
   .carousel {
-    width: 200px;
+    width: 125vh;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -425,22 +427,26 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 75vh;
+    min-width: 125vh;
   }
 
   .carousel-item img {
-    width: 80vh;
+    width: 125vh;
     height: auto;
     padding: 0 0;
     object-fit: cover;
     border-radius: 10px;
   }
 
+  .carousel-item p {
+    font-size: 1rem;
+  }
+
   .contact-card {
     padding: 10px;
-    margin: 5px auto;
+    margin: 20px auto;
     border-radius: 10px;
-    max-width: 63vh;
+    max-width: 80vh;
   }
 
   #contact h2 {
@@ -460,17 +466,21 @@ h2 {
 
   /* Footer */
   .footer {
-    width: 80vh;
+    width: 125vh;
     height: 10px;
     background-color: #1e1e1e;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
   }
 
   .footer p {
     margin: 0;
-    font-size: 0.4rem;
+    font-size: 0.8rem;
     color: #fff;
+  }
+
+  .footer p {
+    font-size: 0.7rem;
   }
 }
 
